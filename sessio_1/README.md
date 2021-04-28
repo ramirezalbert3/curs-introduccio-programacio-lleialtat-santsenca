@@ -1,12 +1,16 @@
 # Introducció a la programació en Python
 
 Els llenguatges de programació ens permeten **comunicar-nos amb els ordinadors** i demanar-los que ens facin qualsevol seguit de tasques.
+
 `Python` es un **llenguatge de programació modern** (dels anys 90) i molt extès a totes les indústries ja que és molt **versàtil** i **senzill**.
+
 Els dissenyadors de `Python` el defineixen com "**el 2n millor llenguatge per a fer qualsevol tasca**", `Python` no és el millor llenguatge per a cap tasca en concret, però permet fer qualsevol tasca que puguis imaginar molt fàcilment.
 
 ## On puc trobar Python
 
 `Python` és gratuït i es pot descarregar de la seva web oficial: [https://www.python.org](https://www.python.org)
+
+Per a proves ràpides (si no tens un ordinador amb `Python` instal·lat a mà) podeu fer servir: [https://replit.com/languages/python3](https://replit.com/languages/python3)
 
 ## Primeres passes
 
@@ -43,7 +47,8 @@ Investiga una mica més, prova diverses operacions aviam què en surt. No tingui
 
 - Es poden sumar dues paraules?
 - Es poden sumar un número i una paraula?
-- Es poden multiplicar números? (pista: l'operador de multiplicar és `*`)
+- Són necessàries les cometes al voltant de les paraules?
+- Es poden fer altres operacions amb números? (pista: els operadors bàsics són `+` `-` `*` `/`)
 - Es poden multiplicar paraules?
 
 ```python
@@ -53,8 +58,14 @@ Investiga una mica més, prova diverses operacions aviam què en surt. No tingui
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
+>>> hola
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hola' is not defined
 >>> 3*7
 21
+>>> 3/7
+0.42857142857142855
 >>> "onze"*3
 'onzeonzeonze'
 >>> 
@@ -66,7 +77,7 @@ Ja veus que `Python` és bastant intuïtiu, i també és bastant evident quan al
 
 Treballar amb la terminal de `Python` pot ser força útil, però els ordinadors "funcionen sols", no hi ha una persona enganxada a l'ordinador escrivint-hi operacions. Com es fa això?
 
-Les operacions i tasques es deixen escrites en **fitxers de text** per a que l'**ordinador els llegeixi i els processi**.
+Les operacions i **tasques** es deixen escrites en **fitxers de text** per a que l'**ordinador els llegeixi i els processi**.
 
 Cada llenguatge de programació té la seva pròpia **convenció sobre com es diuen i com s'estructuren aquests arxius**, però per sort `Python` és dels més senzills de tots.
 

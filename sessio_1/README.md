@@ -10,7 +10,7 @@ Els dissenyadors de `Python` el defineixen com "**el 2n millor llenguatge per a 
 
 `Python` és gratuït i es pot descarregar de la seva web oficial: [https://www.python.org](https://www.python.org)
 
-Per a proves ràpides (si no tens un ordinador amb `Python` instal·lat a mà) podeu fer servir: [https://replit.com/languages/python3](https://replit.com/languages/python3)
+Per a proves ràpides (si no tens un ordinador amb `Python` instal·lat a mà) pots fer servir: [https://replit.com/languages/python3](https://replit.com/languages/python3)
 
 ## Primeres passes
 
@@ -72,6 +72,15 @@ NameError: name 'hola' is not defined
 ```
 
 Ja veus que `Python` és bastant intuïtiu, i també és bastant evident quan alguna cosa no li ha agradat.
+
+Per a sortir de la terminal de `Python` apreta `Ctrl+C` o `Ctrl+D`, depenent de si l'ordinador és Windows o Linux.
+
+```python
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+usuari@ordinador sessio_1 %
+```
 
 ## Organitzant el codi
 

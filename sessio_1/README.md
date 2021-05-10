@@ -43,7 +43,7 @@ Hola mon!
 La terminal de `Python` és **interactiva** i permet anar **evaluant** operacions i tasques en directe.
 Investiga una mica més, prova diverses operacions aviam què en surt. No tinguis por, si una operació no es correcta `Python` es queixarà una mica, però **seguirà corrent**.
 
-### Exercicis
+### Exercicis d'operacions
 
 - Es poden sumar dues paraules?
 - Es poden sumar un número i una paraula?
@@ -129,16 +129,128 @@ Aaaaaara sembla que si. Sembla que si que **ho executava tot**, però quan "exec
 
 ## TODO:
 
+## Variables
+
+Ara parlarem de la peça més bàsica de la programació, la **variable**. Una variable és simplement un nom que li donem a un valor per a no haver de repetir-lo tota l'estona. Obre python, escriu `hola = "Hola! M'agradaria saludar a: "` i apreta Enter, sembla que no ha fet res?
+
+```python
+>>> hola = "Hola! M'agradaria saludar a: "
+>>> 
+```
+
+Alguna cosa haurà fet segurament, anem a provar coses com `hola + "Clara"` o `hola + "Albert"`.
+
+```python
+>>> hola = "Hola! M'agradaria saludar a: "
+>>> hola + "Clara"
+"Hola! M'agradaria saludar a: Clara"
+>>>
+```
+
+Ah ja veig, així que el que fa és **guardar el valor** que posem a la dreta del `=` a la **variable** que definim a l'esquerra del igual.
+Així és molt més ràpid utilitzar valors llargs o complicats com `Hola! M'agrad...(massa llarg)`. Programar està bé, però escriure menys està millor.
+Anem a provar unes quantes coses més!
+
+### Exercicis de variables
+
+- Puc guardar números a variables?
+- Puc veure el contingut d'una variable amb `print`?
+- Puc reutilitzar una variable?
+- Puc fer operacions entre variables?
+- Puc guardar el resultat d'una operació a una variable?
+- Una variable pot tenir qualsevol nom?
+  - Amb espais?
+  - Fins i tot un nom començant amb un número?
+
+```python
+>>> tres = 3
+>>> print(tres)
+3
+>>> tres = 4
+>>> print(tres)
+4
+>>> tres = 3
+>>> print(tres)
+3
+>>> trentatres_i_mig = 33.5
+>>> print(trentatres_i_mig)
+33.5
+>>> tres+trentatres_i_mig
+36.5
+>>> vuit = 4*2
+>>> print(vuit)
+8
+>>> nom1 = "Clara"
+>>> tres = "tres"
+>>> claratres = nom1+tres
+>>> print(claratres)
+'Claratres'
+>>> nom 2 = "Alba"
+  File "<stdin>", line 1
+    nom 2 = "Alba"
+        ^
+SyntaxError: invalid syntax
+>>> 2nom = "Alba"
+  File "<stdin>", line 1
+    2nom = "Alba"
+     ^
+SyntaxError: invalid syntax
+>>>
+```
+
+## Interactuant
+
+Tot això està molt bé, però com puc fer programes més complicats però interactuar amb ells.
+Per exemple, la taula del 7 és molt complicada, podria fer un programa que multipliqués **el número que jo vulgui** per 7?
+
+A python això ho podem fer amb el comandament `input`. Funciona de manera molt semblant al comandament `print` però mentre `print` ens ensenya el que vulguem per pantalla, el comandament `input`ens permet **guardar el que nosaltres volguem en una variable**.
+
+Aviam com ho podriem fer, obre el document `prova.py` i escrivim això.
+
+```python
+num = input("Quin numero vols multiplicar per 7? ")
+print(num*7)
+```
+
+Si ho executem (amb `python prova.py`) l'ordinador ens preguntara quin número volem multiplicar per 7. Introdueix el número que vulguis i apreta intro!
+
+```bash
+Quin numero vols multiplicar per 7? 3
+3333333
+```
+
+Eeemmm...bé, no està malament però no és ben bé el que esperava. Ens ha pintat el número 3 set vegades, què deu estar passant? Què passaria si en comptes de donar-li un número li demanem una paraula?
+
+```bash
+Quin numero vols multiplicar per 7? tres
+trestrestrestrestrestrestres
+```
+
+Sembla que ho processa tot **com si fos una paraula**, hi ha d'haver alguna manera d'arreglar això.
+
+## Tipus de variables
+
+Les **variables** poden ser de molts tipus. De moment només hem vist **números** i **paraules** perquè són els més comuns.
+A Python però hi ha molts tipus de variables (fins i tot en podem crear de nous!) i això és perquè sovint necessitem expresar coses més complexes que números i frases.
+Per exemple, si volguessim escriure un programa rencorós, com podria representar si algú em diu una veritat o una mentida?
+O guardar la llista de la compra?
+O els aniversaris dels meus amics?
+Suposo que ho podria fer amb paraules i números, però quina feinada! Hi ha d'haver una manera millor.
+
+Els **5 tipus de variables més comuns** a Python són (i els seus noms dins de Python):
+
+- Paraules/frases (`string`)
+- Números (`int` o `float` per a números amb decimals)
+- Cert/fals (`bool`, `True/False`)
+- Llistes (`list`)
+- Diccionaris (`dict`)
+
+# TODO: HOW TO USE/CREATE ALL THESE VAR TYPES
+### Excercicis de tipus variables
+
+1. Escriu un programa rencorós que et digui si algú t'ha dit una mentida abans.
+2. El mateix programa rencorós però fes que et recordi quantes mentides t'han dit
+3. El mateix programa rencorós però que et digui quin dia del més et van mentir
+
 EXEMPLE: Mostrar els tipus d'operacións: = + - * / % ** == != < > <= >= && ||  is  in
 
-3 - Què és una variable
-EXEMPLE: crear una variable i fer un print del valor
-EXEMPLE: canviar el valor de la variable i fer el print
-EXEMPLE: crear dos variables, fer operacións entre elles i guardar-ho en una tercera i fer print
-
-input command per a jugar
-
-4 - Tipus de variables: numero, bool, string, list, map
-EXEMPLE: crear un bool
-EXEMPLE: crear un int
-EXEMPLE: crear una string

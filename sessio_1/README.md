@@ -239,18 +239,75 @@ Suposo que ho podria fer amb paraules i números, però quina feinada! Hi ha d'h
 
 Els **5 tipus de variables més comuns** a Python són (i els seus noms dins de Python):
 
-- Paraules/frases (`string`)
+- Paraules/frases (`str`)
 - Números (`int` o `float` per a números amb decimals)
-- Cert/fals (`bool`, `True/False`)
 - Llistes (`list`)
 - Diccionaris (`dict`)
+- Condicionals (Cert/fals) (`bool`, `True/False`)
 
-# TODO: HOW TO USE/CREATE ALL THESE VAR TYPES
-### Excercicis de tipus variables
+Les paraules i els números ja els hem vist.
+
+### Listes
+
+Les llistes són una mica més interessants ja que ens permeten **guardar diferents variables juntes i en ordre** així: `[1, 2, "paraula", 4]`.
+Són molt senzilles d'utilitzar també i hi podem posar qualsevol cosa.
+Podem accedir qualsevol element d'una llista fent servir el **nom de la llista i la posició on es troba** (les posicions comencen per 0!).
+
+```python
+>>> llista = [1, 2, "tres", "4"]
+>>> print(llista[2])
+"tres"
+```
+
+### Diccionaris
+
+Les llistes són també molt interessants ja que ens permeten **guardar diferents variables juntes i amb una etiqueta (com un diccionari)** així: `{"un": 1, "dos": 2}`.
+Com les llistes, també i hi podem posar qualsevol cosa i podem accedir qualsevol element d'una llista fent servir el **nom del diccionari i l'etiqueta del valor** que volem.
+
+```python
+>>> diccionari = {"un": 1, "dos": 2}
+>>> print(diccionari["un"])
+"dos"
+```
+
+### Condicionals
+
+Els valors condicionals són dos, `True` i `False`. Ara mateix poden semblar no gaire útils però més endevant ho seran.
+Els programes sovint necessiten evaluar si una condició és **certa o false** i actuar diferent segons quin sigui el resultat.
+De moment podem evaluar per exemple si un valor és igual a un altre o no amb les operacions `==` (igual) i `!=` (desigual).
+
+```python
+>>> True == False
+False
+>>> True == True
+True
+>>> False == False
+True
+>>> True != False
+True
+>>> True != True
+False
+>>> False != False
+False
+```
+
+### Excercicis de tipus de varibles
+
+1. Podem sumar números decimals amb números enters?
+2. Podem guardar llistes dins de llistes?
+3. I diccionaris dins de diccionaris?
+4. I llistes dins de diccionaris i a l'inrevés?
+5. Podem mirar si dues paraules o números són iguals? Recordatori: `==` (igual) i `!=` (desigual)
+6. Podem mirar si dues paraules o números són més grans o més petits que un altre? Pista: `<` i `>`
+7. Podem convertir un número a paraula i una paraula a número? Pista: `int("3")`, `float("3.7")`, `str(3.6)`
+8. Pot ser que fos això el que li passava al nostre programa que no sabia la taula del 7?
+9. Podem convertir un número decimal a un enter i al revés?
+10. Què passa quan intentem utiltizar posicions d'una llista que no existeixen? Exemples: `llista[-1]` o `llista[123456]`
+11. I quan utiltizem etiquetes que no existeixen en un diccionari? Exemple: `diccionari["no existeix"]`
+12. Podem utilitzar un número com etiqueta d'un diccionari?
+
+### Excercici final
 
 1. Escriu un programa rencorós que et digui si algú t'ha dit una mentida abans.
 2. El mateix programa rencorós però fes que et recordi quantes mentides t'han dit
 3. El mateix programa rencorós però que et digui quin dia del més et van mentir
-
-EXEMPLE: Mostrar els tipus d'operacións: = + - * / % ** == != < > <= >= && ||  is  in
-

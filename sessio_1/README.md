@@ -127,8 +127,6 @@ onzeonzeonzeonze
 
 Aaaaaara sembla que si. Sembla que si que **ho executava tot**, però quan "executes un fitxer de `Python`" has de demanar el que vols que et mostri per pantalla amb `print`.
 
-## TODO:
-
 ## Variables
 
 Ara parlarem de la peça més bàsica de la programació, la **variable**. Una variable és simplement un nom que li donem a un valor per a no haver de repetir-lo tota l'estona. Obre python, escriu `hola = "Hola! M'agradaria saludar a: "` i apreta Enter, sembla que no ha fet res?
@@ -219,7 +217,7 @@ Quin numero vols multiplicar per 7? 3
 3333333
 ```
 
-Eeemmm...bé, no està malament però no és ben bé el que esperava. Ens ha pintat el número 3 set vegades, què deu estar passant? Què passaria si en comptes de donar-li un número li demanem una paraula?
+Eeemmm...bé, no està malament però **no és ben bé el que esperava**. Ens ha pintat el número 3 set vegades, què deu estar passant? Què passaria si en comptes de donar-li un número li demanem una paraula?
 
 ```bash
 Quin numero vols multiplicar per 7? tres
@@ -267,7 +265,7 @@ Com les llistes, també i hi podem posar qualsevol cosa i podem accedir qualsevo
 ```python
 >>> diccionari = {"un": 1, "dos": 2}
 >>> print(diccionari["un"])
-"dos"
+1
 ```
 
 ### Condicionals
@@ -306,7 +304,7 @@ False
 11. I quan utiltizem etiquetes que no existeixen en un diccionari? Exemple: `diccionari["no existeix"]`
 12. Podem utilitzar un número com etiqueta d'un diccionari?
 
-### Excercici final
+## Excercici final
 
 1. Escriu un programa rencorós que et digui si algú t'ha dit una mentida abans.
 2. El mateix programa rencorós però fes que et recordi quantes mentides t'han dit

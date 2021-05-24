@@ -1,4 +1,4 @@
-# Introducció a la programació en Python
+# Sessió 1: Introducció a la programació en Python
 
 Els llenguatges de programació ens permeten **comunicar-nos amb els ordinadors** i demanar-los que ens facin qualsevol seguit de tasques.
 

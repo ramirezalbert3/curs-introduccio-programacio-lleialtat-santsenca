@@ -15,3 +15,7 @@ i que sobretot, us ho passeu bé i feu, amb l'ordinador, el que més de gust us 
 
 Farem unes 4-5 sessions molt pràctiques d'iniciació i tot seguit ja passarem a desenvolupar el nostre primer projecte de programació.
 Nosaltres us proposarem de fer un petit videojoc, per a que veieu com de senzill pot arribar a ser fer-ne un.
+
+### Projecte final
+
+Adaptar (simplificar) i referenciar aquest projecte: https://github.com/TimoWilken/flappy-bird-pygame
